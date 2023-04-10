@@ -1,0 +1,4 @@
+/.env
+/storage.db
+/storage.pickle
+/venv/
