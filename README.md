@@ -1,5 +1,10 @@
 ## Anonymous Chat Bot
 Простой бот чат-рулетка созданный при помощи [aiogram](https://github.com/aiogram/aiogram)
+## Технологии
+- Python 3.11
+- SQLite 3
+- aiogram
+- environs
 ## Что умеет этот бот?
 - Существовать
 - Подбирать случайного собеседника по интересам
