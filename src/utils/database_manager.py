@@ -10,7 +10,7 @@ class DatabaseManager:
         self.conn = await lite.connect(self.path)
         await self.conn.execute('pragma foreign_keys = on')
         await self.conn.execute(
-            "CREATE TABLE 'users' ('tg_id' INTEGER, 'interests' TEXT NOT NULL, PRIMARY KEY('tg_id'))")
+            "CREATE TABLE IF NOT EXISTS 'users' ('tg_id' INTEGER, 'interests' TEXT NOT NULL, PRIMARY KEY('tg_id'))")
         await self.conn.commit()
 
     async def query(self, arg, values=None):
